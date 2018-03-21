@@ -12,6 +12,9 @@
 int main(int argc, const char * argv[]) {
     int score[numbers] = {0};
     score[1] = 20;
+    for (int i = 0; i <= numbers ; i++) {
+        score[i] = 60 + i;
+    }
     printf("%d\n",score[4]);
     return 0;
 }
