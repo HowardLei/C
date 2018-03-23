@@ -1,0 +1,14 @@
+//
+//  5-5.h
+//  First
+//
+//  Created by jyz on 2018/3/23.
+//  Copyright © 2018年 jyz. All rights reserved.
+//
+
+#ifndef __5_h
+#define __5_h
+
+#include <stdio.h>
+
+#endif /* __5_h */
