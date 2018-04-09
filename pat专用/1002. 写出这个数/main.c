@@ -1,6 +1,6 @@
 #include <stdio.h>
-
-int main(int argc, const char * argv[]) {
+//MARK: 第一种方法（不用数组，但是崩了）
+void demo1(){
     // a 为需要计算的数
     long a = 0;
     // b 为求10余的数
@@ -54,6 +54,19 @@ int main(int argc, const char * argv[]) {
         }
         c /= 10;
     } while (d / 1 > 0);
-
+}
+//MARK: 第二种方法（用数组）
+void demo2(){
+    char * a = {"100"};
+    scanf("%s", a);
+    int sum = 0;
+    for (int i = 0; i < 100; i++) {
+        int temp = a[i];
+        sum += temp;
+    }
+    printf("%d", sum);
+}
+int main(int argc, const char * argv[]) {
+    demo2();
     return 0;
 }
