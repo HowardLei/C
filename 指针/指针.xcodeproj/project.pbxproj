@@ -10,6 +10,7 @@
 		6E72DC4B2068E72F0008EEF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC4A2068E72F0008EEF9 /* main.c */; };
 		6E72DC582068F25C0008EEF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC572068F25C0008EEF9 /* main.c */; };
 		6E72DC5E2068F8310008EEF9 /* exchangeNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC5C2068F8310008EEF9 /* exchangeNumber.c */; };
+		6ED2633B207CD028006A608C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2633A207CD028006A608C /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		6ED26336207CD028006A608C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +50,8 @@
 		6E72DC572068F25C0008EEF9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6E72DC5C2068F8310008EEF9 /* exchangeNumber.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = exchangeNumber.c; sourceTree = "<group>"; };
 		6E72DC5D2068F8310008EEF9 /* exchangeNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exchangeNumber.h; sourceTree = "<group>"; };
+		6ED26338207CD028006A608C /* 指针与数组的关系 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "指针与数组的关系"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED2633A207CD028006A608C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ED26335207CD028006A608C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +84,7 @@
 			children = (
 				6E72DC492068E72F0008EEF9 /* 指针 */,
 				6E72DC562068F25C0008EEF9 /* 指针的使用 */,
+				6ED26339207CD028006A608C /* 指针与数组的关系 */,
 				6E72DC482068E72F0008EEF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +94,7 @@
 			children = (
 				6E72DC472068E72F0008EEF9 /* 指针 */,
 				6E72DC552068F25C0008EEF9 /* 指针的使用 */,
+				6ED26338207CD028006A608C /* 指针与数组的关系 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,10 +111,18 @@
 			isa = PBXGroup;
 			children = (
 				6E72DC572068F25C0008EEF9 /* main.c */,
-				6E72DC5C2068F8310008EEF9 /* exchangeNumber.c */,
 				6E72DC5D2068F8310008EEF9 /* exchangeNumber.h */,
+				6E72DC5C2068F8310008EEF9 /* exchangeNumber.c */,
 			);
 			path = "指针的使用";
+			sourceTree = "<group>";
+		};
+		6ED26339207CD028006A608C /* 指针与数组的关系 */ = {
+			isa = PBXGroup;
+			children = (
+				6ED2633A207CD028006A608C /* main.c */,
+			);
+			path = "指针与数组的关系";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +162,23 @@
 			productReference = 6E72DC552068F25C0008EEF9 /* 指针的使用 */;
 			productType = "com.apple.product-type.tool";
 		};
+		6ED26337207CD028006A608C /* 指针与数组的关系 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED2633E207CD028006A608C /* Build configuration list for PBXNativeTarget "指针与数组的关系" */;
+			buildPhases = (
+				6ED26334207CD028006A608C /* Sources */,
+				6ED26335207CD028006A608C /* Frameworks */,
+				6ED26336207CD028006A608C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "指针与数组的关系";
+			productName = "指针与数组的关系";
+			productReference = 6ED26338207CD028006A608C /* 指针与数组的关系 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,6 +194,10 @@
 					};
 					6E72DC542068F25C0008EEF9 = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6ED26337207CD028006A608C = {
+						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -166,6 +216,7 @@
 			targets = (
 				6E72DC462068E72F0008EEF9 /* 指针 */,
 				6E72DC542068F25C0008EEF9 /* 指针的使用 */,
+				6ED26337207CD028006A608C /* 指针与数组的关系 */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +236,14 @@
 			files = (
 				6E72DC582068F25C0008EEF9 /* main.c in Sources */,
 				6E72DC5E2068F8310008EEF9 /* exchangeNumber.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED26334207CD028006A608C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED2633B207CD028006A608C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +389,30 @@
 			};
 			name = Release;
 		};
+		6ED2633C207CD028006A608C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6ED2633D207CD028006A608C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +439,15 @@
 			buildConfigurations = (
 				6E72DC5A2068F25C0008EEF9 /* Debug */,
 				6E72DC5B2068F25C0008EEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED2633E207CD028006A608C /* Build configuration list for PBXNativeTarget "指针与数组的关系" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED2633C207CD028006A608C /* Debug */,
+				6ED2633D207CD028006A608C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
