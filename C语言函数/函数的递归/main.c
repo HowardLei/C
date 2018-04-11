@@ -57,3 +57,7 @@ int main(int argc, const char * argv[]) {
 //    printf("第%d项的值是：%ld\n", x, f);
     return 0;
 }
+
+/*
+ 总结：递归的宗旨就是寻找到递归两层之间的交接，以及最后终结的条件！！！
+ */
