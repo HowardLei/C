@@ -10,10 +10,21 @@
 		6E44583F205A64C1000B920A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E44583E205A64C1000B920A /* main.c */; };
 		6E445847205A7264000B920A /* add.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E445845205A7264000B920A /* add.c */; };
 		6E44584A205A7414000B920A /* forCircle.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E445848205A7414000B920A /* forCircle.c */; };
+		6E63F1D0207E1E69000EF93B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E63F1CF207E1E69000EF93B /* main.c */; };
+		6E63F1D6207E3283000EF93B /* HanoiTower.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E63F1D4207E3283000EF93B /* HanoiTower.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6E445839205A64C1000B920A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6E63F1CB207E1E69000EF93B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -31,10 +42,21 @@
 		6E445846205A7264000B920A /* add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
 		6E445848205A7414000B920A /* forCircle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = forCircle.c; sourceTree = "<group>"; };
 		6E445849205A7414000B920A /* forCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forCircle.h; sourceTree = "<group>"; };
+		6E63F1CD207E1E69000EF93B /* 函数的递归 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "函数的递归"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E63F1CF207E1E69000EF93B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6E63F1D4207E3283000EF93B /* HanoiTower.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HanoiTower.c; sourceTree = "<group>"; };
+		6E63F1D5207E3283000EF93B /* HanoiTower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HanoiTower.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6E445838205A64C1000B920A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E63F1CA207E1E69000EF93B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6E44583D205A64C1000B920A /* C语言函数 */,
+				6E63F1CE207E1E69000EF93B /* 函数的递归 */,
 				6E44583C205A64C1000B920A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				6E44583B205A64C1000B920A /* C语言函数 */,
+				6E63F1CD207E1E69000EF93B /* 函数的递归 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +94,16 @@
 				6E445846205A7264000B920A /* add.h */,
 			);
 			path = "C语言函数";
+			sourceTree = "<group>";
+		};
+		6E63F1CE207E1E69000EF93B /* 函数的递归 */ = {
+			isa = PBXGroup;
+			children = (
+				6E63F1CF207E1E69000EF93B /* main.c */,
+				6E63F1D5207E3283000EF93B /* HanoiTower.h */,
+				6E63F1D4207E3283000EF93B /* HanoiTower.c */,
+			);
+			path = "函数的递归";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,17 +126,38 @@
 			productReference = 6E44583B205A64C1000B920A /* C语言函数 */;
 			productType = "com.apple.product-type.tool";
 		};
+		6E63F1CC207E1E69000EF93B /* 函数的递归 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E63F1D3207E1E69000EF93B /* Build configuration list for PBXNativeTarget "函数的递归" */;
+			buildPhases = (
+				6E63F1C9207E1E69000EF93B /* Sources */,
+				6E63F1CA207E1E69000EF93B /* Frameworks */,
+				6E63F1CB207E1E69000EF93B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "函数的递归";
+			productName = "函数的递归";
+			productReference = 6E63F1CD207E1E69000EF93B /* 函数的递归 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6E445833205A64C0000B920A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jyz;
 				TargetAttributes = {
 					6E44583A205A64C1000B920A = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6E63F1CC207E1E69000EF93B = {
+						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -120,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				6E44583A205A64C1000B920A /* C语言函数 */,
+				6E63F1CC207E1E69000EF93B /* 函数的递归 */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +188,15 @@
 				6E44584A205A7414000B920A /* forCircle.c in Sources */,
 				6E44583F205A64C1000B920A /* main.c in Sources */,
 				6E445847205A7264000B920A /* add.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E63F1C9207E1E69000EF93B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E63F1D0207E1E69000EF93B /* main.c in Sources */,
+				6E63F1D6207E3283000EF93B /* HanoiTower.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +217,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -159,6 +225,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -207,6 +274,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -214,6 +282,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -259,6 +328,30 @@
 			};
 			name = Release;
 		};
+		6E63F1D1207E1E69000EF93B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E63F1D2207E1E69000EF93B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +369,15 @@
 			buildConfigurations = (
 				6E445843205A64C1000B920A /* Debug */,
 				6E445844205A64C1000B920A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E63F1D3207E1E69000EF93B /* Build configuration list for PBXNativeTarget "函数的递归" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E63F1D1207E1E69000EF93B /* Debug */,
+				6E63F1D2207E1E69000EF93B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
