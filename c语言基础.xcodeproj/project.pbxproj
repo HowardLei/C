@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6E75580F20109346002FB44F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E75580E20109346002FB44F /* main.c */; };
+		6EAF96C8208088BB0020D1F3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96C7208088BB0020D1F3 /* main.c */; };
+		6EAF96CE208088EE0020D1F3 /* Square.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96CC208088EE0020D1F3 /* Square.c */; };
+		6EAF96D120808A6F0020D1F3 /* Time.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96CF20808A6F0020D1F3 /* Time.c */; };
+		6EAF96D420808FA80020D1F3 /* CompareNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96D220808FA80020D1F3 /* CompareNumber.c */; };
+		6EAF96D7208091390020D1F3 /* CalcLCM.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96D5208091390020D1F3 /* CalcLCM.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6E75580920109346002FB44F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6EAF96C3208088BB0020D1F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +39,27 @@
 /* Begin PBXFileReference section */
 		6E75580B20109346002FB44F /* c语言基础 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c语言基础"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E75580E20109346002FB44F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6EAF96C5208088BB0020D1F3 /* 实验课专用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "实验课专用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAF96C7208088BB0020D1F3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		6EAF96CC208088EE0020D1F3 /* Square.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Square.c; sourceTree = "<group>"; };
+		6EAF96CD208088EE0020D1F3 /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		6EAF96CF20808A6F0020D1F3 /* Time.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Time.c; sourceTree = "<group>"; };
+		6EAF96D020808A6F0020D1F3 /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		6EAF96D220808FA80020D1F3 /* CompareNumber.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CompareNumber.c; sourceTree = "<group>"; };
+		6EAF96D320808FA80020D1F3 /* CompareNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareNumber.h; sourceTree = "<group>"; };
+		6EAF96D5208091390020D1F3 /* CalcLCM.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CalcLCM.c; sourceTree = "<group>"; };
+		6EAF96D6208091390020D1F3 /* CalcLCM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcLCM.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6E75580820109346002FB44F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAF96C2208088BB0020D1F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				6E75580D20109346002FB44F /* c语言基础 */,
+				6EAF96C6208088BB0020D1F3 /* 实验课专用 */,
 				6E75580C20109346002FB44F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				6E75580B20109346002FB44F /* c语言基础 */,
+				6EAF96C5208088BB0020D1F3 /* 实验课专用 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +93,22 @@
 				6E75580E20109346002FB44F /* main.c */,
 			);
 			path = "c语言基础";
+			sourceTree = "<group>";
+		};
+		6EAF96C6208088BB0020D1F3 /* 实验课专用 */ = {
+			isa = PBXGroup;
+			children = (
+				6EAF96C7208088BB0020D1F3 /* main.c */,
+				6EAF96D6208091390020D1F3 /* CalcLCM.h */,
+				6EAF96D5208091390020D1F3 /* CalcLCM.c */,
+				6EAF96D320808FA80020D1F3 /* CompareNumber.h */,
+				6EAF96D220808FA80020D1F3 /* CompareNumber.c */,
+				6EAF96D020808A6F0020D1F3 /* Time.h */,
+				6EAF96CF20808A6F0020D1F3 /* Time.c */,
+				6EAF96CD208088EE0020D1F3 /* Square.h */,
+				6EAF96CC208088EE0020D1F3 /* Square.c */,
+			);
+			path = "实验课专用";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,17 +131,38 @@
 			productReference = 6E75580B20109346002FB44F /* c语言基础 */;
 			productType = "com.apple.product-type.tool";
 		};
+		6EAF96C4208088BB0020D1F3 /* 实验课专用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EAF96CB208088BB0020D1F3 /* Build configuration list for PBXNativeTarget "实验课专用" */;
+			buildPhases = (
+				6EAF96C1208088BB0020D1F3 /* Sources */,
+				6EAF96C2208088BB0020D1F3 /* Frameworks */,
+				6EAF96C3208088BB0020D1F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "实验课专用";
+			productName = "实验课专用";
+			productReference = 6EAF96C5208088BB0020D1F3 /* 实验课专用 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		6E75580320109346002FB44F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = jyz;
 				TargetAttributes = {
 					6E75580A20109346002FB44F = {
 						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					6EAF96C4208088BB0020D1F3 = {
+						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -110,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				6E75580A20109346002FB44F /* c语言基础 */,
+				6EAF96C4208088BB0020D1F3 /* 实验课专用 */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +191,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E75580F20109346002FB44F /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAF96C1208088BB0020D1F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EAF96D420808FA80020D1F3 /* CompareNumber.c in Sources */,
+				6EAF96D120808A6F0020D1F3 /* Time.c in Sources */,
+				6EAF96CE208088EE0020D1F3 /* Square.c in Sources */,
+				6EAF96C8208088BB0020D1F3 /* main.c in Sources */,
+				6EAF96D7208091390020D1F3 /* CalcLCM.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +223,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -147,6 +231,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -195,6 +280,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -202,6 +288,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -247,6 +334,30 @@
 			};
 			name = Release;
 		};
+		6EAF96C9208088BB0020D1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6EAF96CA208088BB0020D1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -264,6 +375,15 @@
 			buildConfigurations = (
 				6E75581320109346002FB44F /* Debug */,
 				6E75581420109346002FB44F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EAF96CB208088BB0020D1F3 /* Build configuration list for PBXNativeTarget "实验课专用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EAF96C9208088BB0020D1F3 /* Debug */,
+				6EAF96CA208088BB0020D1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
