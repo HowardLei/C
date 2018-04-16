@@ -13,6 +13,8 @@
 		6EAF96D120808A6F0020D1F3 /* Time.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96CF20808A6F0020D1F3 /* Time.c */; };
 		6EAF96D420808FA80020D1F3 /* CompareNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96D220808FA80020D1F3 /* CompareNumber.c */; };
 		6EAF96D7208091390020D1F3 /* CalcLCM.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF96D5208091390020D1F3 /* CalcLCM.c */; };
+		6EF5ACFC2080C6CB00560A56 /* GCD.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5ACFA2080C6CB00560A56 /* GCD.c */; };
+		6EF5ACFF2080D5F800560A56 /* Coconut.c in Sources */ = {isa = PBXBuildFile; fileRef = 6EF5ACFD2080D5F800560A56 /* Coconut.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,10 @@
 		6EAF96D320808FA80020D1F3 /* CompareNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareNumber.h; sourceTree = "<group>"; };
 		6EAF96D5208091390020D1F3 /* CalcLCM.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CalcLCM.c; sourceTree = "<group>"; };
 		6EAF96D6208091390020D1F3 /* CalcLCM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcLCM.h; sourceTree = "<group>"; };
+		6EF5ACFA2080C6CB00560A56 /* GCD.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GCD.c; sourceTree = "<group>"; };
+		6EF5ACFB2080C6CB00560A56 /* GCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		6EF5ACFD2080D5F800560A56 /* Coconut.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Coconut.c; sourceTree = "<group>"; };
+		6EF5ACFE2080D5F800560A56 /* Coconut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coconut.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				6EAF96C7208088BB0020D1F3 /* main.c */,
+				6EF5ACFE2080D5F800560A56 /* Coconut.h */,
+				6EF5ACFD2080D5F800560A56 /* Coconut.c */,
+				6EF5ACFB2080C6CB00560A56 /* GCD.h */,
+				6EF5ACFA2080C6CB00560A56 /* GCD.c */,
 				6EAF96D6208091390020D1F3 /* CalcLCM.h */,
 				6EAF96D5208091390020D1F3 /* CalcLCM.c */,
 				6EAF96D320808FA80020D1F3 /* CompareNumber.h */,
@@ -198,8 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF5ACFC2080C6CB00560A56 /* GCD.c in Sources */,
 				6EAF96D420808FA80020D1F3 /* CompareNumber.c in Sources */,
 				6EAF96D120808A6F0020D1F3 /* Time.c in Sources */,
+				6EF5ACFF2080D5F800560A56 /* Coconut.c in Sources */,
 				6EAF96CE208088EE0020D1F3 /* Square.c in Sources */,
 				6EAF96C8208088BB0020D1F3 /* main.c in Sources */,
 				6EAF96D7208091390020D1F3 /* CalcLCM.c in Sources */,

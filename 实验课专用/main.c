@@ -3,6 +3,7 @@
 #include "Time.h"
 #include "CompareNumber.h"
 #include "CalcLCM.h"
+#include "GCD.h"
 // MARK: 7.1代码
 void demo1(){
     int i = 0;
@@ -45,10 +46,23 @@ void demo4(){
         printf("无法计算\n");
     }
 }
+// MARK: 7.7代码
+void demo7(){
+    int a = 1, b = 1;
+    printf("请输入需要计算最大公因数的数：");
+    scanf("%d,%d", &a, &b);
+    int c = test3(a, b);
+    printf("%d与%d的最大公因数为：%d\n", a, b, c);
+}
+// MARK: 7.8代码
+void demo8(){
+     
+}
 int main(int argc, const char * argv[]) {
 //    demo1();
 //    demo2();
 //    demo3();
-    demo4();
+//    demo4();
+    demo7();
     return 0;
 }
