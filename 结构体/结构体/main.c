@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 /*
  结构体
@@ -24,8 +25,8 @@ int main(int argc, const char * argv[]) {
     strcpy(zhangsan.sex, "男");
     zhangsan.age = 18;
     printf("姓名：%s ；性别：%s ；年龄：%d\n", zhangsan.name, zhangsan.sex, zhangsan.age);
-    // 第二种：创建结构体指针。用于动态内存分配
-    struct Student * p;
+    // 第二种：创建结构体指针。用动态内存分配
+    struct Student * p = malloc(sizeof(struct Student));
     strcpy(p -> name, "王尼玛");
     strcpy(p -> sex, "女");
     p -> age = 18;
