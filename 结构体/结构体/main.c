@@ -51,7 +51,8 @@ int main(int argc, const char * argv[]) {
     printf("%s拿着%s，对着旁边的敌人一顿突突。\n", zhangsan.name, AK47.gunName);
     // 第四种：创建结构体数组
     struct Student ss[2] = {{"李四", "男", 80}, {"小明", "男", 23}};
-    printf("姓名：%s ；性别：%s ；年龄：%d\n", ss[0].name, ss[0].sex, ss[0].age);
-    printf("姓名：%s ；性别：%s ；年龄：%d\n", ss[1].name, ss[1].sex, ss[1].age);
+    for (int i = 0; i < 2; i++) {
+        printf("姓名：%s ；性别：%s ；年龄：%d\n", ss[i].name, ss[i].sex, ss[i].age);
+    }
     return 0;
 }
