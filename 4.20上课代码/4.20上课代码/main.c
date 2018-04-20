@@ -1,6 +1,7 @@
 #include <stdio.h>
 #define ROW 2
 #define COL 3
+#define N 5
 // MARK: 8.1.(1)
 void demo1(int x){
     x = 20;
@@ -40,10 +41,10 @@ void demo3(){
     max = min = a[0];
     maxPos = minPos = 0;
     for (n = 0; n < 10; n++) {
-        if (<#condition#>) {
+        if (a[n] > max) {
             max = a[n];
             maxPos = n;
-        } else if (<#expression#>) {
+        } else if (a[n] < min) {
             min = a[n];
             minPos = n;
         }
@@ -76,17 +77,61 @@ void PrintMatrix(int a[ROW][ROW]){
 }
 // 总调用函数
 void implemetation(){
-    
+    int a[ROW][COL], b[COL][ROW], c[ROW][ROW], i, j;
+    printf("Input 2 * 3 matrix a: \n");
+    for (i = 0; i < ROW; i++) {
+        for (j = 0; j < COL; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+    printf("Input 3 * 2 matrix b: \n");
+    for (i = 0; i < COL; i++) {
+        for (j = 0; j < ROW; j++) {
+            scanf("%d", &b[i][j]);
+        }
+    }
+    MutiplyMatrix(a, b, c);
+    printf("Results:\n");
+    PrintMatrix(c);
+}
+// MARK: 8.3
+void DivArray(int *pArray, int n){
+    int i;
+    for (i = n - 1; i > 0; i--) {
+        pArray[i] /= pArray[0];
+    }
+}
+// MARK: 8.4
+// 获得不及格人数
+int GetFailNum(int score[], int n){
+    int i,count = 0;
+    for (i = 0; i < n; i++) {
+        if (score[i] < 60) {
+            count++;
+        }
+    }
+    return count;
 }
 int main(int argc, const char * argv[]) {
     int x = 10;
     demo1(x);
     printf("%d\n", x);
     printf("-------\n");
-    static int a[] = {5, 6, 7, 8}, i;
+    int a[] = {5, 6, 7, 8}, i;
     demo2(a);
     for (i = 0; i < 4; i++) {
         printf("%d\t",  a[i]);
     }
+    printf("-------\n");
+    implemetation();
+    printf("-------\n");
+    int n, fail, score[N];
+    printf("How many students?");
+    scanf("%d", &n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", score + i);
+    }
+    fail = GetFailNum(score, n);
+    printf("Fail students = %d\n", fail);
     return 0;
 }
