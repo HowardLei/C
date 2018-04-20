@@ -52,7 +52,32 @@ void demo3(){
     printf("min = %d, pos = %d\n", min, minPos);
 }
 // MARK: 8.2.(4)
-void MutiplyMatrix(int a[ROW][])
+// 计算矩阵函数
+void MutiplyMatrix(int a[ROW][COL], int b[COL][ROW], int c[ROW][ROW]){
+    int i, j, k;
+    for (i = 0; i < ROW; i++) {
+        for (j = 0; j < ROW; j++) {
+            c[i][j] = 0;
+            for (k = 0; k < COL; k++) {
+                c[i][j] += (a[i][k] * b[k][j]);
+            }
+        }
+    }
+}
+// 显示矩阵中的元素
+void PrintMatrix(int a[ROW][ROW]){
+    int i, j;
+    for (i = 0; i < ROW; i++) {
+        for (j = 0; j < ROW; j++) {
+            printf("%6d", a[i][j]);
+        }
+        printf("\n");
+    }
+}
+// 总调用函数
+void implemetation(){
+    
+}
 int main(int argc, const char * argv[]) {
     int x = 10;
     demo1(x);
