@@ -15,28 +15,36 @@ void fileWrite(){
     // 判断文件是否打开
     if (fp == NULL) {
         printf("打开文件失败");
+        return; // 当函数中出现 return 的字样时，效果相当于 break;
     }
     for (int i = 'A'; i <= 'Z'; i++) {
         fputc(i, fp);
         fprintf(fp, "\t");
     }
-    fputs("abc", fp);
-    fprintf(fp, "123");
     fclose(fp);
 }
 /*
  在C语言中，对文件进行读取同样很简单
  1、通过文件指针打开文件
- 2、
+ 2、对文件中的数据用 fscanf 函数进行读取（注意：在用 fscanf 读取文件中的内容的时候，一定要注意文件里面的数据格式，如果不注意的话将会出现读取错误）
+ 3、用 fclose 函数关闭文件
  */
 // MARK: 读文件方式
 void fileRead(){
     // 1、创建一个文件指针
     FILE *fp = NULL;
+    fp = fopen("new.txt", "r");
     if (fp == NULL) {
         printf("打开文件失败");
+        return;
     }
-
+    char a;
+    for (int i = 0; i <= 26; i++) {
+        fscanf(fp, "%c\t", &a);
+        printf("%c", a);
+    }
+    printf("\n");
+    fclose(fp);
 }
 int main(int argc, const char * argv[]) {
     fileWrite();
