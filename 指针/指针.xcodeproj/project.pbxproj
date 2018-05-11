@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E14F72C209C7D750030370A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E14F72B209C7D750030370A /* main.c */; };
 		6E72DC4B2068E72F0008EEF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC4A2068E72F0008EEF9 /* main.c */; };
 		6E72DC582068F25C0008EEF9 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC572068F25C0008EEF9 /* main.c */; };
 		6E72DC5E2068F8310008EEF9 /* exchangeNumber.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E72DC5C2068F8310008EEF9 /* exchangeNumber.c */; };
@@ -14,6 +15,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6E14F727209C7D750030370A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6E72DC452068E72F0008EEF9 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E14F729209C7D750030370A /* 函数指针 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "函数指针"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E14F72B209C7D750030370A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6E72DC472068E72F0008EEF9 /* 指针 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "指针"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E72DC4A2068E72F0008EEF9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6E72DC552068F25C0008EEF9 /* 指针的使用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "指针的使用"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +67,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6E14F726209C7D750030370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E72DC442068E72F0008EEF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,12 +98,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E14F72A209C7D750030370A /* 函数指针 */ = {
+			isa = PBXGroup;
+			children = (
+				6E14F72B209C7D750030370A /* main.c */,
+			);
+			path = "函数指针";
+			sourceTree = "<group>";
+		};
 		6E72DC3E2068E72F0008EEF9 = {
 			isa = PBXGroup;
 			children = (
 				6E72DC492068E72F0008EEF9 /* 指针 */,
 				6E72DC562068F25C0008EEF9 /* 指针的使用 */,
 				6ED26339207CD028006A608C /* 指针与数组的关系 */,
+				6E14F72A209C7D750030370A /* 函数指针 */,
 				6E72DC482068E72F0008EEF9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +123,7 @@
 				6E72DC472068E72F0008EEF9 /* 指针 */,
 				6E72DC552068F25C0008EEF9 /* 指针的使用 */,
 				6ED26338207CD028006A608C /* 指针与数组的关系 */,
+				6E14F729209C7D750030370A /* 函数指针 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +157,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6E14F728209C7D750030370A /* 函数指针 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E14F72F209C7D750030370A /* Build configuration list for PBXNativeTarget "函数指针" */;
+			buildPhases = (
+				6E14F725209C7D750030370A /* Sources */,
+				6E14F726209C7D750030370A /* Frameworks */,
+				6E14F727209C7D750030370A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "函数指针";
+			productName = "函数指针";
+			productReference = 6E14F729209C7D750030370A /* 函数指针 */;
+			productType = "com.apple.product-type.tool";
+		};
 		6E72DC462068E72F0008EEF9 /* 指针 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E72DC4E2068E72F0008EEF9 /* Build configuration list for PBXNativeTarget "指针" */;
@@ -188,6 +234,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = jyz;
 				TargetAttributes = {
+					6E14F728209C7D750030370A = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
 					6E72DC462068E72F0008EEF9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -217,11 +267,20 @@
 				6E72DC462068E72F0008EEF9 /* 指针 */,
 				6E72DC542068F25C0008EEF9 /* 指针的使用 */,
 				6ED26337207CD028006A608C /* 指针与数组的关系 */,
+				6E14F728209C7D750030370A /* 函数指针 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6E14F725209C7D750030370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E14F72C209C7D750030370A /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6E72DC432068E72F0008EEF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +309,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6E14F72D209C7D750030370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E14F72E209C7D750030370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9C6R6LR63;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6E72DC4C2068E72F0008EEF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,6 +499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6E14F72F209C7D750030370A /* Build configuration list for PBXNativeTarget "函数指针" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E14F72D209C7D750030370A /* Debug */,
+				6E14F72E209C7D750030370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6E72DC422068E72F0008EEF9 /* Build configuration list for PBXProject "指针" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
