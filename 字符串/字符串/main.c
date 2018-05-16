@@ -11,8 +11,8 @@
 // MARK: 字符串的长度
 void demo1(){
     int t = 0;
-    char * str1 = "王尼玛";
-    char * str2 = "Hello";
+    char *str1 = "王尼玛";
+    char *str2 = "Hello";
     // 第一种方法：通过遍历的方式得到字符串的长度。
     for (int i = 0; i < 69; i++) {
         if (str2[i] != '\0') {
@@ -27,7 +27,7 @@ void demo1(){
 }
 // MARK: 字符串的遍历（注意：没法遍历中文）
 void demo2(){
-    char * str1 = "Hello";
+    char *str1 = "Hello";
     for (unsigned long i = 0; i < strlen(str1); i++) {
         if (str1[i] != '\0') {
             printf("%c\n",str1[i]);
@@ -44,8 +44,8 @@ strcmp 函数值 = 0 时为两个字符串相等
              > 0 时为 str1 比 str2 长
 */
 void demo3(){
-    char * str = "z";
-    char * s = malloc(sizeof(char));
+    char *str = "z";
+    char *s = malloc(sizeof(char));
     printf("请输入一个字符串：");
 //    scanf("%s", p); 这句话不能调用字符指针，因为我们没有为scanf输入的指针申请存储空间，scanf输入的数据必须也只能存放到实现申请好的存储空间，不然输入的字符可能会覆盖掉代码段或者其他一些地方的数据，引发未知的错误。
     scanf("%c", s);
