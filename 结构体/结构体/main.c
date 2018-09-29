@@ -33,6 +33,16 @@ typedef struct tagGun {
     char *gunName;
     int bulletNumber;
 } Gun;
+
+struct newWorld {
+    int age;
+    int sex;
+};
+
+struct oldWorld {
+    int age;
+    int sex;
+};
 int main(int argc, const char * argv[]) {
     // 第一类：一般结构体的创建
     struct Student zhangsan = {"张三丰", "男", 18};
@@ -54,5 +64,9 @@ int main(int argc, const char * argv[]) {
     for (int i = 0; i < 2; i++) {
         printf("姓名：%s ；性别：%s ；年龄：%d\n", ss[i].name, ss[i].sex, ss[i].age);
     }
+    struct newWorld new = {1, 1};
+    printf("%d, %p\n", new.age, &new.age);
+    new.age = 2;
+    printf("%d, %p\n", new.age, &new.age);
     return 0;
 }

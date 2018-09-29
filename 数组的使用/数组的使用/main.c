@@ -39,7 +39,7 @@ int * choose(int score[], int n){
     for (i = 0; i < n - 1; i++) {
         k = i;
         for (j = i + 1; j < n; j++) {
-            if (score[i] < score[j]) {
+            if (score[k] < score[j]) {
                 k = j;
             }
         }
